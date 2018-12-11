@@ -1,7 +1,0 @@
-Hi this folder is for internship batch started on dec 3rd, 2018
-
-in this we will be learning python, data science, database, big data, linux,
-data visulation, machine learning 
-
-
-so all codes are divided into days 
