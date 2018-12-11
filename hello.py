@@ -1,3 +1,5 @@
-name = input("Enter your name : ")
+name = int(input("your login id "))
 
-print(f"Welcome user {name} to the world of python")
+print(f"Welcome user with id {name} to the world of python")
+
+print("Python is easy")
