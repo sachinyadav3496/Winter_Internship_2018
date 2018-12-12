@@ -1,0 +1,48 @@
+
+Git Cheat Sheeet
+
+
+step1) first of all create a repository on your git hub account
+
+than open powershell and go to your code folder 
+
+
+# git init --> it initlize your current folder  as a git repository
+# vim README.md --> overview or discreption of your repository
+# git config --global user.name gitusername
+# git config --global user.email git email address
+config command will configure your credentials over git repository and if you
+used --global it will apply to all repository current or future
+
+#git add . --> it will add all files from current repository
+#git status --> staging area, where we can which files are added and which are
+still to be added at git staging area
+#git commit -m "any message regarding changes" --> This will create a version
+for your git repository, every time you commit something you are creating a
+new version of your code
+
+#git remote add origin https://gihub.com/username/project_name.git --> it will
+link your online repository to offline repository with name origin, so every
+time you write origin in this current directory meas you are reffering to
+https://github.com/username/project-name.git
+
+#git push origin master --> It will upload all of your local data files to
+your remote repository ( internet connection required )
+
+#git pull origin master --> It will fetch all the changes that has been
+commited to your directory  
+
+--> if you have an error of unrelated histories than follow this step
+#git pull origin master --allow-unrelated-histories
+#git status --> see which files has conflict issues ( see red files )
+#git add . --> make sure you have reviewed your changes and merged all changes
+#git commit -m "message" --> to acknowledge your changes as well as merges"
+#git push origin master --> origin is remote destination where we want to upload our files and master is your main branch
+
+
+---> if you have large files more than 100MB than you need to configure GIT-LFS account
+
+step1) search for the git lfs download page on google
+step2) download git_lfs.exe program and install it in windows with default permission
+step3) open command shell ( powershell ) and type command git install lfs to tell git to use lfs
+
