@@ -1,0 +1,7 @@
+"name":"john"
+'age':23
+"company"='Grras Solutions Pvt. Ltd.'
+'country'="india'
+'hello":'world'
+'hi':'bye'
+'python'-->"awesome"
