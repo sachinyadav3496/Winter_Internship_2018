@@ -1,0 +1,2 @@
+ggplot(pressure)+geom_line(aes(temperature,pressure,col='red'))+
+geom_point(aes(tempreature,pressure,col='blue',size=10))
