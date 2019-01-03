@@ -1,0 +1,7 @@
+city	size	amount
+NewYork	large	23
+NewYork	small	14
+London	large	22
+London	small	16
+Beijing	large	121
+Beijing	small	56

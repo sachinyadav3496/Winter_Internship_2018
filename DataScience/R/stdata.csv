@@ -1,0 +1,10 @@
+"","ID","SNAME","ADDRESS","GRADE","MARKD"
+"1",1,"a","jaipur","A",5
+"2",2,"b","delhi","A",6
+"3",3,"c","alwar","A+",7
+"4",4,"d","ajmer","B",3
+"5",5,"e","punjab","B+",4
+"6",6,"f","nyc","C",1
+"7",7,"g","nagur","C+",2
+"8",8,"h","kanpur","A",6
+"9",NA,NA,NA,"A",NA

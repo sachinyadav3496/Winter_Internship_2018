@@ -1,0 +1,66 @@
+<RECORDS>
+   <EMPLOYEE>
+      <ID>1</ID>
+      <NAME>Rick</NAME>
+      <SALARY>623.3</SALARY>
+      <STARTDATE>1/1/2012</STARTDATE>
+      <DEPT>IT</DEPT>
+   </EMPLOYEE>
+	
+   <EMPLOYEE>
+      <ID>2</ID>
+      <NAME>Dan</NAME>
+      <SALARY>515.2</SALARY>
+      <STARTDATE>9/23/2013</STARTDATE>
+      <DEPT>Operations</DEPT>
+   </EMPLOYEE>
+   
+   <EMPLOYEE>
+      <ID>3</ID>
+      <NAME>Michelle</NAME>
+      <SALARY>611</SALARY>
+      <STARTDATE>11/15/2014</STARTDATE>
+      <DEPT>IT</DEPT>
+   </EMPLOYEE>
+   
+   <EMPLOYEE>
+      <ID>4</ID>
+      <NAME>Ryan</NAME>
+      <SALARY>729</SALARY>
+      <STARTDATE>5/11/2014</STARTDATE>
+      <DEPT>HR</DEPT>
+   </EMPLOYEE>
+   
+   <EMPLOYEE>
+      <ID>5</ID>
+      <NAME>Gary</NAME>
+      <SALARY>843.25</SALARY>
+      <STARTDATE>3/27/2015</STARTDATE>
+      <DEPT>Finance</DEPT>
+   </EMPLOYEE>
+   
+   <EMPLOYEE>
+      <ID>6</ID>
+      <NAME>Nina</NAME>
+      <SALARY>578</SALARY>
+      <STARTDATE>5/21/2013</STARTDATE>
+      <DEPT>IT</DEPT>
+   </EMPLOYEE>
+   
+   <EMPLOYEE>
+      <ID>7</ID>
+      <NAME>Simon</NAME>
+      <SALARY>632.8</SALARY>
+      <STARTDATE>7/30/2013</STARTDATE>
+      <DEPT>Operations</DEPT>
+   </EMPLOYEE>
+   
+   <EMPLOYEE>
+      <ID>8</ID>
+      <NAME>Guru</NAME>
+      <SALARY>722.5</SALARY>
+      <STARTDATE>6/17/2014</STARTDATE>
+      <DEPT>Finance</DEPT>
+   </EMPLOYEE>
+	
+</RECORDS>

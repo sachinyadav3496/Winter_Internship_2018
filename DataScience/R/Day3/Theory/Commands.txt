@@ -1,0 +1,68 @@
+######################################
+######## Merge Based on Same Columns #######
+
+StudentsMarks<-data.frame(c(1,2,3,4,5),c("Tom","John","Alan","Alex","Ria"),c(23,34,43,54,23),c(45,55,43,54,65))
+names(StudentsMarks)<-c("ID","Name","English","Maths")
+StudentsMarks1<-data.frame(c(1,2,3,4,5,6),c("Tom","John","Alan","Alex","Ria","Jia"),c(23,34,43,54,23,56),c(45,55,43,54,65,89))
+names(StudentsMarks1)<-c("ID","Name","Stats","Social")
+merge(StudentsMarks, StudentsMarks1, by="ID")
+merge(StudentsMarks, StudentsMarks1, by=c("ID","Name"))
+merge(StudentsMarks, StudentsMarks1, by=c("ID","Name"),all=TRUE)
+
+##################################################
+####### Merge Based on Different Column Names ##########
+
+StudentsMarks<-data.frame(c(1,2,3,4,5),c("Tom","John","Alan","Alex","Ria"),c(23,34,43,54,23),c(45,55,43,54,65))
+names(StudentsMarks)<-c("ID","Name","English","Maths")
+StudentsMarks1<-data.frame(c(1,2,3,4,5,6),c("Tom","John","Alan","Alex","Ria","Jia"),c(23,34,43,54,23,56),c(45,55,43,54,65,89))
+names(StudentsMarks1)<-c("StudentID","Name","Stats","Social")
+merge(StudentsMarks, StudentsMarks1, by="Name",by.x="ID",by.y="StudentID")
+merge(StudentsMarks, StudentsMarks1, by="Name",by.x="ID",by.y="StudentID", all=TRUE)
+
+#######################################################################
+######### cbind  : Same number of rows ##################################
+
+Pressure<-data.frame(c("Hyd","Del","Mum","Che"),c(34,56,67,57), c(67,89,67,78), c(57,67,89,100))
+names(Pressure)<-c("City","Pressure1","Pressure2","Pressure3")
+Temperature<-data.frame(c("Hyd","Del","Mum","Che"),c(34,56,67,57), c(67,89,67,78))
+names(Temperature)<-c("City","Temperature1","Temperature2")
+cbind(Pressure[ ,c("City","Pressure2")], Temperature[, c("Temperature1","Temperature2")])
+
+#######################################################################
+##################### rbind 1 ###########################################
+
+StudentsMarks<-data.frame(c(1,2,3,4,5),c("Tom","John","Alan","Alex","Ria"),c(23,34,43,54,23),c(45,55,43,54,65))
+names(StudentsMarks)<-c("ID","Name","English","Maths")
+StudentsMarks1<-data.frame(c(1,2,3,4,5),c("Tom","John","Alan","Alex","Ria"),c(23,34,43,54,23),c(45,55,43,54,65))
+names(StudentsMarks1)<-c("ID","Name","English","Maths")
+rbind(StudentsMarks, StudentsMarks1)
+
+#######################################################################
+##################### rbind 2 ###########################################
+
+StudentsMarks<-data.frame(c(1,2,3,4,5),c("Tom","John","Alan","Alex","Ria"),c(23,34,43,54,23),c(45,55,43,54,65))
+names(StudentsMarks)<-c("ID","Name","English","Maths")
+StudentsMarks1<-data.frame(c(15),c("ABC"),c(23),c(45))
+names(StudentsMarks1)<-c("ID","Name","English","Maths")
+rbind(StudentsMarks, StudentsMarks1)
+
+######################################################################
+############### Order ################################################
+StudentsMarks[order(StudentsMarks$English), ]
+StudentsMarks[order(StudentsMarks$Maths), ]
+StudentsMarks[order(StudentsMarks$Name), ]
+StudentsMarks[order(-StudentsMarks$English), ]
+
+###########################################################################
+############################ Melt : Reshape Package #######################
+
+dataMelt<-data.frame(c(1,2,3,4),c("M","F","F","M"),c(8.9,6.2,9.4,10.5),c(11.3,10.7,12.1,13.5),c(10.6,12.1,13.6,6.2))
+names(dataMelt)<-c("Subject","Gender","Control","Cond1","Cond2")
+melt(dataMelt, id.vars="Gender",measure.vars="Cond1")
+melt(dataMelt, id.vars=c("Gender","Subject"),variable.name="ABC", value.name="EGF")
+
+#############################################################################
+####################### Dcast : Reshpae Package #############################
+aq<-head(airquality,15)
+aqmelt<-melt(aq, id.vars=c("Month","Day"), measure.vars=c("Ozone","Solar.R","Wind","Temp"))
+aqcast<-dcast(aqmelt, Month + Day ~ variable)
