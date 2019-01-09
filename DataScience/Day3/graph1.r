@@ -11,4 +11,11 @@ index = index + 1 ;
 }
 plot(x,y,col='red',type='l')
 points(x,y,col='blue')
-y1 = 
+y1 = NA
+c = 1
+while (c<=20) { 
+y1[c]=poly1d(x[c],m=-0.221,c=0.3);
+c = c + 1 ; 
+}
+lines(x,y1,col='green')
+points(x,y1,col='pink')
